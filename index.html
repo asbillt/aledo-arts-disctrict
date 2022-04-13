@@ -22,6 +22,19 @@
       href="./favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,27 +47,74 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Shops</a></li>
-          <li><a href="#">Social</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+      <div class="flex-wrapper-1">
+        <a href="#"><img class="logo" src="" /></a>
+        <button class="toggle-collapse">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <nav class="navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#">Events</a></li>
+          <li class="nav-item"><a href="#">Shops</a></li>
+          <li class="nav-item"><a href="#">Offices</a></li>
+          <li class="nav-item"><a href="#">About</a></li>
+          <li class="nav-item"><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="events"></section>
-      <section class="shops"></section>
-      <section class="social"></section>
-      <section class="about"></section>
-      <section class="contact"></section>
+      <section class="banner">
+        <h2>Aledo Arts District</h2>
+      </section>
+      <section class="events">
+        <div class="events-container">
+          <h2>Check out scheduled events</h2>
+          <button>Events</button>
+        </div>
+      </section>
+      <section class="shops">
+        <h2>Browse the Aledo Shops</h2>
+        <button>Shops</button>
+      </section>
+      <section class="offices">
+        <h2>See downtown offices</h2>
+        <button>Offices</button>
+      </section>
+      <section class="about">
+        <h2>Learn more about Downtown Aledo</h2>
+        <button>Learn More</button>
+      </section>
+      <section class="contact">
+        <h2>Get in touch with us</h2>
+        <button>Contact Us</button>
+      </section>
     </main>
     <footer>
-      <div class="copyright"></div>
-      <div class="socials"></div>
+      <div class="copyright">&copy; Aledo Arts District 2022</div>
+      <div class="socials">
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-facebook-square"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-twitter-square"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-youtube-square"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-pinterest-square"></i
+        ></a>
+      </div>
     </footer>
+
+    <script>
+      $(document).ready(function () {
+        $(".toggle-collapse").click(function () {
+          $(".navbar-nav").toggleClass("collapse");
+        });
+      });
+    </script>
   </body>
 </html>
