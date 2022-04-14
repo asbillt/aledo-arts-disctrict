@@ -9,6 +9,9 @@ aledo orange - #d04701 , hsl(20, 99%, 41%, 1)
 
 html {
   font-size: 16px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -94,10 +97,8 @@ main {
   flex-direction: column;
 }
 
-/* Banner Styles */
-.banner {
+.hero-image {
   height: 100vh;
-  background-image: url("./images/banner-downtown.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -106,8 +107,16 @@ main {
   align-items: center;
 }
 
+/* Banner Styles */
+.banner {
+  background-image: url("./images/banner-downtown.jpg");
+  scroll-snap-align: start;
+}
+
 .banner h2 {
-  font-size: 2.25rem;
+  width: 90%;
+  text-align: center;
+  font-size: 1.75rem;
   background-color: hsla(209, 87%, 95%, 0.9);
   padding: 0.75rem 1rem;
   border-radius: 1rem;
@@ -115,15 +124,9 @@ main {
 
 /* Events Styles */
 .events {
-  height: 30rem;
   background-image: url("./images/events-downtown.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  scroll-snap-align: start;
 }
 
 .events-container {
@@ -141,4 +144,31 @@ main {
   margin-bottom: 1rem;
 }
 
+/* Shops Styles */
+.shops {
+  background-image: url("./images/shops-downtown.jpg");
+  flex-direction: column;
+  scroll-snap-align: start;
+}
+
+.shops-container {
+  font-size: 1.5rem;
+  background-color: hsla(209, 87%, 95%, 0.9);
+  padding: 0.75rem 0.75rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shops-container h2 {
+  margin-bottom: 1rem;
+}
+
+/* Eats Styles */
+/* Offices Styles */
+/* Parks & Trails Styles */
+/* About Styles */
+/* Contact Styles */
 /* Footer Styles */
