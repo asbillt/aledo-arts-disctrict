@@ -1,8 +1,9 @@
-/* Global Styles
+/*
 aledo blue - #083d6f , hsl(209, 87%, 23%, 1)
 aledo orange - #d04701 , hsl(20, 99%, 41%, 1)
 */
 
+/* Global Styles */
 * {
   box-sizing: border-box;
 }
@@ -37,6 +38,10 @@ button:hover {
   border: 1px solid hsla(15, 87%, 23%, 1);
   color: hsla(15, 87%, 23%, 1);
   cursor: pointer;
+}
+
+.content-btn {
+  width: 6rem;
 }
 
 /* Header Styles */
@@ -107,6 +112,22 @@ main {
   align-items: center;
 }
 
+.content-wrapper {
+  font-size: 1.5rem;
+  width: 90%;
+  background-color: hsla(209, 87%, 95%, 0.9);
+  padding: 0.75rem 0.75rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+}
+
 /* Banner Styles */
 .banner {
   background-image: url("./images/banner-downtown.jpg");
@@ -129,21 +150,6 @@ main {
   scroll-snap-align: start;
 }
 
-.events-container {
-  font-size: 1.5rem;
-  background-color: hsla(209, 87%, 95%, 0.9);
-  padding: 0.75rem 0.75rem;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.events-container h2 {
-  margin-bottom: 1rem;
-}
-
 /* Shops Styles */
 .shops {
   background-image: url("./images/shops-downtown.jpg");
@@ -151,24 +157,42 @@ main {
   scroll-snap-align: start;
 }
 
-.shops-container {
-  font-size: 1.5rem;
-  background-color: hsla(209, 87%, 95%, 0.9);
-  padding: 0.75rem 0.75rem;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.shops-container h2 {
-  margin-bottom: 1rem;
-}
-
 /* Eats Styles */
+.eats {
+  background-image: url("./images/restaurants-downtown.jpg");
+  flex-direction: column;
+  scroll-snap-align: start;
+}
+
 /* Offices Styles */
+.offices {
+  background-image: url("./images/offices-downtown.jpg");
+  flex-direction: column;
+  scroll-snap-align: start;
+}
+
 /* Parks & Trails Styles */
+.parks {
+  background-image: url("./images/parks-downtown.jpg");
+  flex-direction: column;
+  scroll-snap-align: start;
+}
+
 /* About Styles */
+.about {
+  background-image: url("./images/about-downtown.jpg");
+  flex-direction: column;
+  scroll-snap-align: start;
+}
+
 /* Contact Styles */
+.contact {
+  flex-direction: column;
+  scroll-snap-align: start;
+}
+
 /* Footer Styles */
+footer {
+  flex-direction: column;
+  scroll-snap-align: start;
+}
